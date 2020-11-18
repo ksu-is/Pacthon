@@ -11,8 +11,8 @@ red = (255,0,0)
 purple = (255,0,255)
 yellow   = ( 255, 255,   0)
 
-Pacman=pygame.image.load('pacman.png')
-pygame.display.set_icon(Pacman)
+Trollicon=pygame.image.load('images/Trollman.png')
+pygame.display.set_icon(Trollicon)
 
 #Add music
 pygame.mixer.init()
@@ -398,23 +398,23 @@ def startGame():
 
 
   # Create the player paddle object
-  Pacman = Player( w, p_h, "Pacman.png" )
+  Pacman = Player( w, p_h, "images/Trollman.png" )
   all_sprites_list.add(Pacman)
   pacman_collide.add(Pacman)
    
-  Blinky=Ghost( w, b_h, "Blinky.png" )
+  Blinky=Ghost( w, b_h, "images/Blinky.png" )
   monsta_list.add(Blinky)
   all_sprites_list.add(Blinky)
 
-  Pinky=Ghost( w, m_h, "Pinky.png" )
+  Pinky=Ghost( w, m_h, "images/Pinky.png" )
   monsta_list.add(Pinky)
   all_sprites_list.add(Pinky)
    
-  Inky=Ghost( i_w, m_h, "Inky.png" )
+  Inky=Ghost( i_w, m_h, "images/Inky.png" )
   monsta_list.add(Inky)
   all_sprites_list.add(Inky)
    
-  Clyde=Ghost( c_w, m_h, "Clyde.png" )
+  Clyde=Ghost( c_w, m_h, "images/Clyde.png" )
   monsta_list.add(Clyde)
   all_sprites_list.add(Clyde)
 
