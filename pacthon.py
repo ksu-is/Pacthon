@@ -221,26 +221,7 @@ class Ghost(Player):
       except IndexError:
          return [0,0]
 
-Pinky_directions = [
-[0,-30,4],
-[15,0,9],
-[0,15,11],
-[-15,0,23],
-[0,15,7],
-[15,0,3],
-[0,-15,3],
-[15,0,19],
-[0,15,3],
-[15,0,3],
-[0,15,3],
-[15,0,3],
-[0,-15,15],
-[-15,0,7],
-[0,15,3],
-[-15,0,19],
-[0,-15,11],
-[15,0,9]
-]
+
 
 Blinky_directions = [
 [0,-15,4],
@@ -327,7 +308,7 @@ Clyde_directions = [
 [15,0,9],
 ]
 
-pl = len(Pinky_directions)-1
+
 bl = len(Blinky_directions)-1
 il = len(Inky_directions)-1
 cl = len(Clyde_directions)-1
@@ -406,9 +387,7 @@ def startGame():
   monsta_list.add(Blinky)
   all_sprites_list.add(Blinky)
 
-  Pinky=Ghost( w, m_h, "Pinky.png" )
-  monsta_list.add(Pinky)
-  all_sprites_list.add(Pinky)
+
    
   Inky=Ghost( i_w, m_h, "Inky.png" )
   monsta_list.add(Inky)
@@ -480,11 +459,6 @@ def startGame():
       # ALL GAME LOGIC SHOULD GO BELOW THIS COMMENT
       Pacman.update(wall_list,gate)
 
-      returned = Pinky.changespeed(Pinky_directions,False,p_turn,p_steps,pl)
-      p_turn = returned[0]
-      p_steps = returned[1]
-      Pinky.changespeed(Pinky_directions,False,p_turn,p_steps,pl)
-      Pinky.update(wall_list,False)
 
       returned = Blinky.changespeed(Blinky_directions,False,b_turn,b_steps,bl)
       b_turn = returned[0]
