@@ -11,7 +11,7 @@ red = (255,0,0)
 purple = (255,0,255)
 yellow   = ( 255, 255,   0)
 
-Pacman=pygame.image.load('pacman.png')
+Pacman=pygame.image.load('Pacman.png')
 pygame.display.set_icon(Pacman)
 
 #Add music
@@ -459,6 +459,7 @@ def startGame():
       # ALL GAME LOGIC SHOULD GO BELOW THIS COMMENT
       Pacman.update(wall_list,gate)
 
+  
 
       returned = Blinky.changespeed(Blinky_directions,False,b_turn,b_steps,bl)
       b_turn = returned[0]
