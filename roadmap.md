@@ -4,7 +4,7 @@
 
 [x] make easier
 
-x] add music
+[x] add music
 
 [x] edit some text base sections
 
